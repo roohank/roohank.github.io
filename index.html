@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roohan Kamalian - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="name">Roohan Kamalian</h1>
+    <button id="langBtn" class="lang-btn" onclick="toggleLang()">فارسی</button>
+    <nav>
+      <a href="#about" id="nav-about"></a>
+      <a href="#skills" id="nav-skills"></a>
+      <a href="#experience" id="nav-exp"></a>
+      <a href="#projects" id="nav-proj"></a>
+      <a href="#contact" id="nav-contact"></a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="card">
+      <h2 id="about-title"></h2>
+      <p id="about-text"></p>
+      <a href="resume.pdf" class="btn" download id="cv-btn"></a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="card">
+      <h2 id="skills-title"></h2>
+      <ul id="skills-list"></ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="card">
+      <h2 id="exp-title"></h2>
+      <div id="exp-text"></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="card">
+      <h2 id="proj-title"></h2>
+      <ul id="proj-list"></ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2 id="contact-title"></h2>
+      <p><strong>Email:</strong> your-email@example.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/roohank" target="_blank">github.com/roohank</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <script src="lang.js"></script>
+  <script>
+    // تغییر جهت صفحه در حالت فارسی
+    function toggleRTL(lang) {
+      if (lang === "fa") {
+        document.body.style.direction = "rtl";
+        document.body.style.textAlign = "right";
+      } else {
+        document.body.style.direction = "ltr";
+        document.body.style.textAlign = "left";
+      }
+    }
+
+    // بازنویسی تابع setLang برای پشتیبانی از RTL
+    const oldSetLang = setLang;
+    setLang = (lang) => {
+      oldSetLang(lang);
+      toggleRTL(lang);
+    };
+
+    // اجرای اولیه
+    setLang("en");
+  </script>
+</body>
+</html>
