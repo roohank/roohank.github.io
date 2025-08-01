@@ -18,32 +18,13 @@ I am open to feedback and highly adaptable.`,
     skills: {
       title: "Skills",
       list: [
-        "Python",
-        "FastAPI",
-        "Telethon / Pyrogram",
-        "BeautifulSoup",
-        "Web Scraping",
-        "SQLAlchemy",
-        "Telegram Bot Development",
-        "MetaTrader 5 (MT5) Automation",
-        "Speech Recognition (Voice to Text)",
-        "Data Analysis",
-        "API Integration",
-        "Automation Scripting",
-        "Object-Oriented Programming (OOP)",
-        "Git / Version Control",
-        "JavaScript",
-        "HTML5",
-        "Django",
-        "PyQt / PySide",
-        "PostgreSQL",
-        "Linux Command Line",
-        "Constructive Feedback Acceptance",
-        "Emotional Control (Anger Management)",
-        "Work Ethic",
-        "Adaptability",
-        "Problem Solving",
-        "Team Collaboration"
+        "Python","FastAPI","Telethon / Pyrogram","BeautifulSoup","Web Scraping",
+        "SQLAlchemy","Telegram Bot Development","MetaTrader 5 (MT5) Automation",
+        "Speech Recognition (Voice to Text)","Data Analysis","API Integration",
+        "Automation Scripting","Object-Oriented Programming (OOP)","Git / Version Control",
+        "JavaScript","HTML5","Django","PyQt / PySide","PostgreSQL","Linux Command Line",
+        "Constructive Feedback Acceptance","Emotional Control (Anger Management)",
+        "Work Ethic","Adaptability","Problem Solving","Team Collaboration"
       ]
     },
     projects: {
@@ -63,9 +44,7 @@ I am open to feedback and highly adaptable.`,
         "Voice-to-Text Translator – Uses Deep Translator & SpeechRecognition to convert speech to translated text in real-time."
       ]
     },
-    contact: {
-      title: "Contact",
-    }
+    contact: { title: "Contact" }
   },
 
   fa: {
@@ -87,32 +66,12 @@ I am open to feedback and highly adaptable.`,
     skills: {
       title: "مهارت‌ها",
       list: [
-        "پایتون",
-        "FastAPI",
-        "Telethon / Pyrogram",
-        "BeautifulSoup",
-        "وب اسکرپینگ",
-        "SQLAlchemy",
-        "توسعه ربات تلگرام",
-        "اتومات‌سازی MetaTrader 5 (MT5)",
-        "تشخیص گفتار (Speech to Text)",
-        "تحلیل داده",
-        "یکپارچه‌سازی API",
-        "اسکریپت‌نویسی خودکار",
-        "برنامه‌نویسی شیء‌گرا (OOP)",
-        "Git / کنترل نسخه",
-        "جاوااسکریپت",
-        "HTML5",
-        "Django",
-        "PyQt / PySide",
-        "PostgreSQL",
-        "خط فرمان لینوکس",
-        "پذیرش بازخورد سازنده",
-        "کنترل خشم",
-        "اخلاق کاری",
-        "سازگاری",
-        "حل مسئله",
-        "کار تیمی"
+        "پایتون","FastAPI","Telethon / Pyrogram","BeautifulSoup","وب اسکرپینگ",
+        "SQLAlchemy","توسعه ربات تلگرام","اتومات‌سازی MetaTrader 5 (MT5)",
+        "تشخیص گفتار (Speech to Text)","تحلیل داده","یکپارچه‌سازی API",
+        "اسکریپت‌نویسی خودکار","برنامه‌نویسی شیء‌گرا (OOP)","Git / کنترل نسخه",
+        "جاوااسکریپت","HTML5","Django","PyQt / PySide","PostgreSQL","خط فرمان لینوکس",
+        "پذیرش بازخورد سازنده","کنترل خشم","اخلاق کاری","سازگاری","حل مسئله","کار تیمی"
       ]
     },
     projects: {
@@ -132,9 +91,7 @@ I am open to feedback and highly adaptable.`,
         "مترجم گفتار به متن – ابزاری با Deep Translator و SpeechRecognition برای ترجمه همزمان گفتار به متن."
       ]
     },
-    contact: {
-      title: "تماس",
-    }
+    contact: { title: "تماس" }
   }
 };
 
@@ -168,11 +125,5 @@ function setLang(lang) {
   });
 
   document.getElementById("contact-title").textContent = content[lang].contact.title;
-
   document.getElementById("langBtn").textContent = lang === "en" ? "فارسی" : "English";
-}
-
-function toggleLang() {
-  const currentLang = document.getElementById("langBtn").textContent === "فارسی" ? "en" : "fa";
-  setLang(currentLang);
 }

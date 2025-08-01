@@ -30,11 +30,7 @@
   <section id="skills">
     <div class="card">
       <h2 id="skills-title">Skills</h2>
-      <ul id="skills-list">
-        <li>Python</li>
-        <li>FastAPI</li>
-        <li>Telethon</li>
-      </ul>
+      <ul id="skills-list"></ul>
     </div>
   </section>
 
@@ -50,9 +46,7 @@
   <section id="projects">
     <div class="card">
       <h2 id="proj-title">Projects</h2>
-      <ul id="proj-list">
-        <li>Telegram Translation Bot</li>
-      </ul>
+      <ul id="proj-list"></ul>
     </div>
   </section>
 
@@ -75,22 +69,19 @@
 
   <script src="lang.js"></script>
   <script>
-    // تغییر جهت صفحه در حالت فارسی
-    function toggleRTL(lang) {
+    function applyLang(lang) {
+      setLang(lang);
       document.body.style.direction = (lang === "fa") ? "rtl" : "ltr";
       document.body.style.textAlign = (lang === "fa") ? "right" : "left";
     }
 
-    // بررسی وجود setLang قبل از بازنویسی آن
-    if (typeof setLang !== "undefined") {
-      const oldSetLang = setLang;
-      setLang = (lang) => {
-        oldSetLang(lang);
-        toggleRTL(lang);
-      };
-    } else {
-      toggleRTL("en");
+    function toggleLang() {
+      const currentLang = document.getElementById("langBtn").textContent === "فارسی" ? "fa" : "en";
+      applyLang(currentLang);
     }
+
+    // مقدار اولیه
+    applyLang("en");
   </script>
 </body>
 </html>
