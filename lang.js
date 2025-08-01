@@ -5,106 +5,66 @@ const content = {
       skills: "Skills",
       experience: "Experience",
       projects: "Projects",
-      contact: "Contact"
+      contact: "Contact",
     },
     about: {
       title: "About Me",
-      text: `I am a committed and hardworking individual with strong perseverance and discipline (I believe with a teaspoon, I can reach the Earth’s core).
-I enjoy teamwork and have experience collaborating in financial market analysis.
-I have good anger management skills and communicate effectively with team members.
+      text: `I am a committed and hardworking individual with strong perseverance and discipline (I believe with a teaspoon, I can reach the Earth’s core). 
+I enjoy teamwork and have experience collaborating in financial market analysis. 
+I have good anger management skills and communicate effectively with team members. 
 I am open to feedback and highly adaptable.`,
-      cv: "Download CV"
+      cv: "Download CV",
     },
     skills: {
       title: "Skills",
       list: [
-        "Python (Programming Language)",
-        "Web Scraping",
+        "Python",
         "FastAPI",
-        "Django",
         "Telethon / Pyrogram",
         "BeautifulSoup",
+        "Web Scraping",
         "SQLAlchemy",
-        "PostgreSQL",
+        "Telegram Bot Development",
         "MetaTrader 5 (MT5) Automation",
+        "Speech Recognition (Voice to Text)",
+        "Data Analysis",
         "API Integration",
         "Automation Scripting",
         "Object-Oriented Programming (OOP)",
-        "Data Extraction & Data Collection",
-        "Data Analysis",
-        "Telegram Bot Development",
-        "Speech Recognition (Voice to Text)",
-        "Linux Command Line",
         "Git / Version Control",
-        "HTML5",
         "JavaScript",
-        "PySide / PyQt",
-        "Problem Solving",
-        "Team Collaboration",
-        "Adaptability",
-        "Work Ethic",
+        "HTML5",
+        "Django",
+        "PyQt / PySide",
+        "PostgreSQL",
+        "Linux Command Line",
         "Constructive Feedback Acceptance",
-        "Emotional Control (Anger Management)"
+        "Emotional Control (Anger Management)",
+        "Work Ethic",
+        "Adaptability",
+        "Problem Solving",
+        "Team Collaboration"
       ]
-    },
-    experience: {
-      title: "Experience"
     },
     projects: {
       title: "Projects",
       list: [
-        {
-          name: "Telegram Username to Phone Number Tool",
-          desc: "Uses reverse engineering and a local database to retrieve users' phone numbers from their Telegram usernames."
-        },
-        {
-          name: "Instagram Bot Activity Simulator",
-          desc: "Simulates human behavior to keep Instagram bots active. Performs actions like posting, sending messages, following users, and liking posts on a random schedule."
-        },
-        {
-          name: "Instagram Hashtag Targeting Tool",
-          desc: "Extracts target users based on hashtags in both Top and Recent posts. Outputs results in Excel for further analysis."
-        },
-        {
-          name: "Notice Board Bot for TeamTalk",
-          desc: "A bot for TeamTalk that manages radio schedules, offline messages, and displays dynamic statuses like crypto prices and Wikipedia search results."
-        },
-        {
-          name: "Mafia Game Assistant Bot",
-          desc: "A smart assistant bot for the Mafia game in TeamTalk. Assigns roles, manages voting, and handles challenges with timers."
-        },
-        {
-          name: "Forex Trading Bot for MetaTrader 5",
-          desc: "Automated trading bot for gold (XAUUSD) on MetaTrader 5 based on trading strategies."
-        },
-        {
-          name: "Gooshkon.ir Telegram Downloader Bot",
-          desc: "Bot built with FastAPI and Telethon to download videos, series, and textbooks from Gooshkon.ir."
-        },
-        {
-          name: "Internet Radio Player App",
-          desc: "A PyQt6 app for streaming internet radio stations with playlist management."
-        },
-        {
-          name: "Scopa Cup – Tournament Assistant",
-          desc: "PyQt6 tool for managing Scopa tournaments with score tracking and scheduling."
-        },
-        {
-          name: "TeamTalk Audio Player Bot",
-          desc: "Bot that searches and plays YouTube audio in TeamTalk channels, supports favorites and streams radio/TV."
-        },
-        {
-          name: "Telegram Translation Bot",
-          desc: "A multilingual bot using Pyrogram and Deep Translator, supports 133 languages with inline selection."
-        },
-        {
-          name: "Voice-to-Text Translator",
-          desc: "Converts speech to translated text using Deep Translator and SpeechRecognition."
-        }
+        "Telegram Username to Phone Number Tool – Uses reverse engineering and a local database to retrieve users' phone numbers from their Telegram usernames.",
+        "Instagram Bot Activity Simulator – Simulates human behavior to keep Instagram bots active. Performs actions like posting, sending messages, following users, and liking posts on a random schedule.",
+        "Instagram Hashtag Targeting Tool – Extracts target users based on hashtags, gathering usernames, locations, and followers' bios, and exports results to Excel.",
+        "Notice Board Bot for TeamTalk – Manages radio program schedules, offline messages, nicknames, statuses, and includes tools like calendar, date converter, and horoscope.",
+        "Mafia Game Assistant Bot – Smart assistant bot for Mafia game in TeamTalk, assigning roles, managing challenge/voting times, and counting votes.",
+        "Forex Trading Bot for MetaTrader 5 – Automated trading bot for XAUUSD symbol executing trades based on defined strategies.",
+        "Gooshkon.ir Telegram Downloader Bot – FastAPI & Telethon bot to download videos, series, and textbooks from Gooshkon.ir.",
+        "Internet Radio Player App – A PyQt6 GUI app for streaming internet radios with playlist management.",
+        "Scopa Cup – Tournament Assistant – PyQt6 tool for managing Scopa tournaments with team grouping, match scheduling, and score tracking.",
+        "TeamTalk Audio Player Bot – Searches and plays YouTube audio in TeamTalk channels, supports favorites and TV/Radio streaming.",
+        "Telegram Translation Bot – Multilingual bot using Pyrogram and Deep Translator with support for 133 languages.",
+        "Voice-to-Text Translator – Uses Deep Translator & SpeechRecognition to convert speech to translated text in real-time."
       ]
     },
     contact: {
-      title: "Contact"
+      title: "Contact",
     }
   },
 
@@ -114,106 +74,105 @@ I am open to feedback and highly adaptable.`,
       skills: "مهارت‌ها",
       experience: "تجربه‌ها",
       projects: "پروژه‌ها",
-      contact: "ارتباط"
+      contact: "تماس",
     },
     about: {
       title: "درباره من",
-      text: `من فردی متعهد و سخت‌کوش هستم که پشتکار و انضباط بالایی دارم (باور دارم که حتی با یک قاشق هم می‌توانم به هسته زمین برسم).
-از کار تیمی لذت می‌برم و تجربه همکاری در تحلیل بازارهای مالی را دارم.
-در مدیریت خشم مهارت دارم و به‌خوبی با اعضای تیم ارتباط برقرار می‌کنم.
-نسبت به بازخوردها پذیرایم و به‌راحتی با شرایط جدید سازگار می‌شوم.`,
-      cv: "دانلود رزومه"
+      text: `من فردی متعهد و سخت‌کوش هستم که پشتکار و انضباط بالایی دارم (باور دارم حتی با یک قاشق می‌توانم به هسته زمین برسم!).  
+به کار تیمی علاقه‌مندم و تجربه همکاری در تحلیل بازارهای مالی را دارم.  
+مهارت خوبی در مدیریت خشم دارم و ارتباط مؤثری با اعضای تیم برقرار می‌کنم.  
+پذیرای بازخورد هستم و به‌خوبی با تغییرات سازگار می‌شوم.`,
+      cv: "دانلود رزومه",
     },
     skills: {
       title: "مهارت‌ها",
       list: [
-        "زبان برنامه‌نویسی پایتون",
-        "وب اسکرپینگ",
+        "پایتون",
         "FastAPI",
-        "جنگو (Django)",
         "Telethon / Pyrogram",
-        "کتابخانه BeautifulSoup",
+        "BeautifulSoup",
+        "وب اسکرپینگ",
         "SQLAlchemy",
-        "PostgreSQL",
-        "اتومات‌سازی در MetaTrader 5",
+        "توسعه ربات تلگرام",
+        "اتومات‌سازی MetaTrader 5 (MT5)",
+        "تشخیص گفتار (Speech to Text)",
+        "تحلیل داده",
         "یکپارچه‌سازی API",
         "اسکریپت‌نویسی خودکار",
-        "برنامه‌نویسی شیءگرا (OOP)",
-        "استخراج و جمع‌آوری داده‌ها",
-        "تحلیل داده‌ها",
-        "توسعه ربات تلگرام",
-        "تشخیص گفتار (Speech Recognition)",
-        "خط فرمان لینوکس",
-        "کنترل نسخه با Git",
+        "برنامه‌نویسی شیء‌گرا (OOP)",
+        "Git / کنترل نسخه",
+        "جاوااسکریپت",
         "HTML5",
-        "JavaScript",
-        "PySide / PyQt",
-        "حل مسئله",
-        "کار تیمی",
-        "سازگاری",
-        "اخلاق کاری",
+        "Django",
+        "PyQt / PySide",
+        "PostgreSQL",
+        "خط فرمان لینوکس",
         "پذیرش بازخورد سازنده",
-        "کنترل هیجان و خشم"
+        "کنترل خشم",
+        "اخلاق کاری",
+        "سازگاری",
+        "حل مسئله",
+        "کار تیمی"
       ]
-    },
-    experience: {
-      title: "تجربه‌ها"
     },
     projects: {
       title: "پروژه‌ها",
       list: [
-        {
-          name: "ابزار تبدیل نام کاربری تلگرام به شماره تلفن",
-          desc: "با مهندسی معکوس و پایگاه داده محلی، شماره تلفن کاربران را از نام کاربری تلگرام استخراج می‌کند."
-        },
-        {
-          name: "شبیه‌ساز فعالیت ربات اینستاگرام",
-          desc: "رفتار انسانی را شبیه‌سازی می‌کند تا ربات‌های اینستاگرام فعال بمانند (پست‌گذاری، پیام‌دادن، دنبال کردن، لایک)."
-        },
-        {
-          name: "ابزار هدف‌گیری هشتگ اینستاگرام",
-          desc: "کاربران هدف را بر اساس هشتگ‌ها استخراج کرده و خروجی در قالب فایل اکسل ارائه می‌دهد."
-        },
-        {
-          name: "ربات تابلو اعلانات برای TeamTalk",
-          desc: "مدیریت برنامه‌های رادیویی، پیام‌های آفلاین، نمایش وضعیت‌های پویا مثل قیمت ارز دیجیتال و نتایج جستجوی ویکی‌پدیا."
-        },
-        {
-          name: "دستیار بازی مافیا",
-          desc: "ربات هوشمند برای بازی مافیا در TeamTalk که نقش‌ها را اختصاص می‌دهد، رأی‌گیری و چالش‌ها را مدیریت می‌کند."
-        },
-        {
-          name: "ربات معامله‌گر فارکس برای MetaTrader 5",
-          desc: "ربات خودکار برای معاملات نماد طلا (XAUUSD) بر اساس استراتژی‌های معاملاتی."
-        },
-        {
-          name: "ربات دانلودر تلگرام Gooshkon.ir",
-          desc: "با استفاده از FastAPI و Telethon برای دانلود ویدیو، سریال، انیمیشن و کتاب‌های درسی."
-        },
-        {
-          name: "برنامه پخش‌کننده رادیوی اینترنتی",
-          desc: "اپلیکیشن PyQt6 برای پخش ایستگاه‌های رادیویی اینترنتی همراه با مدیریت لیست پخش."
-        },
-        {
-          name: "دستیار مسابقات Scopa Cup",
-          desc: "ابزار PyQt6 برای مدیریت مسابقات Scopa همراه با پیگیری امتیازها و برنامه‌ریزی مسابقات."
-        },
-        {
-          name: "ربات پخش‌کننده صوت TeamTalk",
-          desc: "رباتی که صدای یوتیوب را در کانال‌های TeamTalk پخش می‌کند و لیست علاقه‌مندی‌ها دارد."
-        },
-        {
-          name: "ربات مترجم تلگرام",
-          desc: "ربات چندزبانه ساخته‌شده با Pyrogram و Deep Translator، پشتیبانی از 133 زبان."
-        },
-        {
-          name: "مترجم گفتار به متن",
-          desc: "ابزاری برای ترجمه گفتار به متن با Deep Translator و SpeechRecognition."
-        }
+        "ابزار یافتن شماره تلفن از یوزرنیم تلگرام – با مهندسی معکوس و دیتابیس محلی شماره کاربران را از یوزرنیم تلگرام بازیابی می‌کند.",
+        "شبیه‌ساز فعالیت ربات اینستاگرام – رفتار انسانی را شبیه‌سازی کرده و اقداماتی مثل ارسال پست، پیام، فالو و لایک را انجام می‌دهد.",
+        "ابزار هدف‌گیری هشتگ اینستاگرام – کاربران هدف را براساس هشتگ‌ها استخراج کرده و نتایج را در فایل اکسل ذخیره می‌کند.",
+        "ربات تابلوی اعلانات TeamTalk – مدیریت برنامه‌های رادیویی، پیام‌های آفلاین، نام‌های کاربری و ابزارهای کمکی مثل تقویم و مبدل تاریخ.",
+        "ربات دستیار بازی مافیا – ربات هوشمند برای بازی مافیا در TeamTalk با مدیریت نقش‌ها، زمان‌بندی و شمارش آرا.",
+        "ربات معاملاتی فارکس برای MetaTrader 5 – ربات خودکار برای نماد XAUUSD بر اساس استراتژی‌های تعریف‌شده.",
+        "ربات دانلودر تلگرام Gooshkon.ir – ربات FastAPI و Telethon برای دانلود ویدیوها، سریال‌ها و کتاب‌ها از Gooshkon.ir.",
+        "برنامه پخش رادیو اینترنتی – اپلیکیشن PyQt6 برای استریم رادیو اینترنتی همراه با مدیریت لیست پخش.",
+        "دستیار تورنمنت Scopa Cup – ابزار PyQt6 برای مدیریت تورنمنت Scopa شامل گروه‌بندی تیم‌ها، زمان‌بندی مسابقات و ثبت امتیازات.",
+        "ربات پخش‌کننده صوت TeamTalk – جستجو و پخش صدای یوتیوب در کانال‌های TeamTalk با لیست علاقه‌مندی‌ها و استریم TV/Radio.",
+        "ربات مترجم تلگرام – ربات چندزبانه با Pyrogram و Deep Translator با پشتیبانی از 133 زبان.",
+        "مترجم گفتار به متن – ابزاری با Deep Translator و SpeechRecognition برای ترجمه همزمان گفتار به متن."
       ]
     },
     contact: {
-      title: "ارتباط"
+      title: "تماس",
     }
   }
 };
+
+function setLang(lang) {
+  document.getElementById("nav-about").textContent = content[lang].nav.about;
+  document.getElementById("nav-skills").textContent = content[lang].nav.skills;
+  document.getElementById("nav-exp").textContent = content[lang].nav.experience;
+  document.getElementById("nav-proj").textContent = content[lang].nav.projects;
+  document.getElementById("nav-contact").textContent = content[lang].nav.contact;
+
+  document.getElementById("about-title").textContent = content[lang].about.title;
+  document.getElementById("about-text").textContent = content[lang].about.text;
+  document.getElementById("cv-btn").textContent = content[lang].about.cv;
+
+  document.getElementById("skills-title").textContent = content[lang].skills.title;
+  const skillsList = document.getElementById("skills-list");
+  skillsList.innerHTML = "";
+  content[lang].skills.list.forEach(skill => {
+    const li = document.createElement("li");
+    li.textContent = skill;
+    skillsList.appendChild(li);
+  });
+
+  document.getElementById("proj-title").textContent = content[lang].projects.title;
+  const projList = document.getElementById("proj-list");
+  projList.innerHTML = "";
+  content[lang].projects.list.forEach(project => {
+    const li = document.createElement("li");
+    li.textContent = project;
+    projList.appendChild(li);
+  });
+
+  document.getElementById("contact-title").textContent = content[lang].contact.title;
+
+  document.getElementById("langBtn").textContent = lang === "en" ? "فارسی" : "English";
+}
+
+function toggleLang() {
+  const currentLang = document.getElementById("langBtn").textContent === "فارسی" ? "en" : "fa";
+  setLang(currentLang);
+}
