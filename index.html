@@ -11,76 +11,86 @@
     <h1 id="name">Roohan Kamalian</h1>
     <button id="langBtn" class="lang-btn" onclick="toggleLang()">فارسی</button>
     <nav>
-      <a href="#about" id="nav-about"></a>
-      <a href="#skills" id="nav-skills"></a>
-      <a href="#experience" id="nav-exp"></a>
-      <a href="#projects" id="nav-proj"></a>
-      <a href="#contact" id="nav-contact"></a>
+      <a href="#about" id="nav-about">About</a>
+      <a href="#skills" id="nav-skills">Skills</a>
+      <a href="#experience" id="nav-exp">Experience</a>
+      <a href="#projects" id="nav-proj">Projects</a>
+      <a href="#contact" id="nav-contact">Contact</a>
     </nav>
   </header>
 
   <section id="about">
     <div class="card">
-      <h2 id="about-title"></h2>
-      <p id="about-text"></p>
-      <a href="resume.pdf" class="btn" download id="cv-btn"></a>
+      <h2 id="about-title">About Me</h2>
+      <p id="about-text">This is a short description about myself.</p>
+      <a href="resume.pdf" class="btn" download id="cv-btn">Download CV</a>
     </div>
   </section>
 
   <section id="skills">
     <div class="card">
-      <h2 id="skills-title"></h2>
-      <ul id="skills-list"></ul>
+      <h2 id="skills-title">Skills</h2>
+      <ul id="skills-list">
+        <li>Python</li>
+        <li>FastAPI</li>
+        <li>Telethon</li>
+      </ul>
     </div>
   </section>
 
   <section id="experience">
     <div class="card">
-      <h2 id="exp-title"></h2>
-      <div id="exp-text"></div>
+      <h2 id="exp-title">Experience</h2>
+      <div id="exp-text">
+        <p>Experience details will be added here.</p>
+      </div>
     </div>
   </section>
 
   <section id="projects">
     <div class="card">
-      <h2 id="proj-title"></h2>
-      <ul id="proj-list"></ul>
+      <h2 id="proj-title">Projects</h2>
+      <ul id="proj-list">
+        <li>Telegram Translation Bot</li>
+      </ul>
     </div>
   </section>
 
   <section id="contact">
     <div class="card">
-      <h2 id="contact-title"></h2>
+      <h2 id="contact-title">Contact</h2>
       <p><strong>Email:</strong> roohan.kamalian@gmail.com</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/roohank" target="_blank">github.com/roohank</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/roohan-kamalian-b91b3b369 target="_blank">linkedin.com/in/roohan-kamalian-</p>
+      <p><strong>GitHub:</strong> 
+        <a href="https://github.com/roohank" target="_blank">github.com/roohank</a>
+      </p>
+      <p><strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/roohan-kamalian-b91b3b369" target="_blank">
+          linkedin.com/in/roohan-kamalian-b91b3b369
+        </a>
+      </p>
     </div>
   </section>
 
-  <footer id="footer"></footer>
+  <footer id="footer">© 2025 Roohan Kamalian</footer>
 
   <script src="lang.js"></script>
   <script>
     // تغییر جهت صفحه در حالت فارسی
     function toggleRTL(lang) {
-      if (lang === "fa") {
-        document.body.style.direction = "rtl";
-        document.body.style.textAlign = "right";
-      } else {
-        document.body.style.direction = "ltr";
-        document.body.style.textAlign = "left";
-      }
+      document.body.style.direction = (lang === "fa") ? "rtl" : "ltr";
+      document.body.style.textAlign = (lang === "fa") ? "right" : "left";
     }
 
-    // بازنویسی تابع setLang برای پشتیبانی از RTL
-    const oldSetLang = setLang;
-    setLang = (lang) => {
-      oldSetLang(lang);
-      toggleRTL(lang);
-    };
-
-    // اجرای اولیه
-    setLang("en");
+    // بررسی وجود setLang قبل از بازنویسی آن
+    if (typeof setLang !== "undefined") {
+      const oldSetLang = setLang;
+      setLang = (lang) => {
+        oldSetLang(lang);
+        toggleRTL(lang);
+      };
+    } else {
+      toggleRTL("en");
+    }
   </script>
 </body>
 </html>
