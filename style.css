@@ -59,3 +59,24 @@ footer {
   background: #222;
   color: white;
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .card {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
