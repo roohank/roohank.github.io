@@ -38,9 +38,7 @@
   <section id="experience">
     <div class="card">
       <h2 id="exp-title">Experience</h2>
-      <div id="exp-text">
-        <p>Experience details will be added here.</p>
-      </div>
+      <div id="exp-text"><p>Experience details will be added here.</p></div>
     </div>
   </section>
 
@@ -55,10 +53,10 @@
     <div class="card">
       <h2 id="contact-title">Contact</h2>
       <p><i class="fas fa-envelope"></i> <strong>Email:</strong> roohan.kamalian@gmail.com</p>
-      <p><i class="fab fa-github"></i> <strong>GitHub:</strong>
+      <p><i class="fab fa-github"></i> <strong>GitHub:</strong> 
         <a href="https://github.com/roohank" target="_blank">github.com/roohank</a>
       </p>
-      <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong>
+      <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> 
         <a href="https://www.linkedin.com/in/roohan-kamalian-b91b3b369" target="_blank">
           linkedin.com/in/roohan-kamalian-b91b3b369
         </a>
@@ -71,21 +69,24 @@
 
   <footer id="footer">© 2025 Roohan Kamalian</footer>
 
-  <!-- اول فایل lang.js لود بشه -->
   <script src="lang.js"></script>
-
-  <!-- بعد از لود شدن lang.js، تابع‌ها بازنویسی بشن -->
   <script>
-    function toggleRTL(lang) {
-      document.body.style.direction = (lang === "fa") ? "rtl" : "ltr";
-      document.body.style.textAlign = (lang === "fa") ? "right" : "left";
-    }
-
-    // وقتی کل صفحه لود شد، زبان پیش‌فرض انگلیسی بشه
-    window.onload = function () {
+    // زبان پیش‌فرض هنگام بارگذاری صفحه
+    document.addEventListener("DOMContentLoaded", () => {
       setLang("en");
-      toggleRTL("en");
-    };
+      document.getElementById("langBtn").dataset.lang = "en";
+    });
+
+    // تغییر زبان با کلیک روی دکمه
+    function toggleLang() {
+      const btn = document.getElementById("langBtn");
+      const currentLang = btn.dataset.lang;
+      const newLang = currentLang === "en" ? "fa" : "en";
+
+      setLang(newLang);
+      btn.dataset.lang = newLang;
+      btn.textContent = newLang === "en" ? "فارسی" : "English";
+    }
   </script>
 </body>
 </html>

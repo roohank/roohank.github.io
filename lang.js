@@ -127,3 +127,46 @@ function setLang(lang) {
   document.getElementById("contact-title").textContent = content[lang].contact.title;
   document.getElementById("langBtn").textContent = lang === "en" ? "فارسی" : "English";
 }
+
+// ... همان content بزرگ که داری
+
+function setLang(lang) {
+  // ناوبری
+  document.getElementById("nav-about").textContent = content[lang].nav.about;
+  document.getElementById("nav-skills").textContent = content[lang].nav.skills;
+  document.getElementById("nav-exp").textContent = content[lang].nav.experience;
+  document.getElementById("nav-proj").textContent = content[lang].nav.projects;
+  document.getElementById("nav-contact").textContent = content[lang].nav.contact;
+
+  // درباره من
+  document.getElementById("about-title").textContent = content[lang].about.title;
+  document.getElementById("about-text").textContent = content[lang].about.text;
+  document.getElementById("cv-btn").textContent = content[lang].about.cv;
+
+  // مهارت‌ها
+  document.getElementById("skills-title").textContent = content[lang].skills.title;
+  const skillsList = document.getElementById("skills-list");
+  skillsList.innerHTML = "";
+  content[lang].skills.list.forEach(skill => {
+    const li = document.createElement("li");
+    li.textContent = skill;
+    skillsList.appendChild(li);
+  });
+
+  // پروژه‌ها
+  document.getElementById("proj-title").textContent = content[lang].projects.title;
+  const projList = document.getElementById("proj-list");
+  projList.innerHTML = "";
+  content[lang].projects.list.forEach(project => {
+    const li = document.createElement("li");
+    li.textContent = project;
+    projList.appendChild(li);
+  });
+
+  // تماس
+  document.getElementById("contact-title").textContent = content[lang].contact.title;
+
+  // تغییر جهت متن
+  document.body.style.direction = lang === "fa" ? "rtl" : "ltr";
+  document.body.style.textAlign = lang === "fa" ? "right" : "left";
+}
