@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roohan Kamalian - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- اضافه کردن Font Awesome برای آیکن‌ها -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -32,11 +31,7 @@
   <section id="skills">
     <div class="card">
       <h2 id="skills-title">Skills</h2>
-      <ul id="skills-list">
-        <li>Python</li>
-        <li>FastAPI</li>
-        <li>Telethon</li>
-      </ul>
+      <ul id="skills-list"></ul>
     </div>
   </section>
 
@@ -52,31 +47,23 @@
   <section id="projects">
     <div class="card">
       <h2 id="proj-title">Projects</h2>
-      <ul id="proj-list">
-        <li>Telegram Translation Bot</li>
-      </ul>
+      <ul id="proj-list"></ul>
     </div>
   </section>
 
   <section id="contact">
     <div class="card">
       <h2 id="contact-title">Contact</h2>
-      <p>
-        <i class="fas fa-envelope"></i> <strong>Email:</strong>
-        <a href="mailto:roohan.kamalian@gmail.com">roohan.kamalian@gmail.com</a>
-      </p>
-      <p>
-        <i class="fab fa-github"></i> <strong>GitHub:</strong>
+      <p><i class="fas fa-envelope"></i> <strong>Email:</strong> roohan.kamalian@gmail.com</p>
+      <p><i class="fab fa-github"></i> <strong>GitHub:</strong>
         <a href="https://github.com/roohank" target="_blank">github.com/roohank</a>
       </p>
-      <p>
-        <i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong>
+      <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong>
         <a href="https://www.linkedin.com/in/roohan-kamalian-b91b3b369" target="_blank">
           linkedin.com/in/roohan-kamalian-b91b3b369
         </a>
       </p>
-      <p>
-        <i class="fab fa-telegram"></i> <strong>Telegram:</strong>
+      <p><i class="fab fa-telegram"></i> <strong>Telegram:</strong>
         <a href="https://t.me/roohan_k" target="_blank">t.me/roohan_k</a>
       </p>
     </div>
@@ -84,22 +71,21 @@
 
   <footer id="footer">© 2025 Roohan Kamalian</footer>
 
+  <!-- اول فایل lang.js لود بشه -->
   <script src="lang.js"></script>
+
+  <!-- بعد از لود شدن lang.js، تابع‌ها بازنویسی بشن -->
   <script>
     function toggleRTL(lang) {
       document.body.style.direction = (lang === "fa") ? "rtl" : "ltr";
       document.body.style.textAlign = (lang === "fa") ? "right" : "left";
     }
 
-    if (typeof setLang !== "undefined") {
-      const oldSetLang = setLang;
-      setLang = (lang) => {
-        oldSetLang(lang);
-        toggleRTL(lang);
-      };
-    } else {
+    // وقتی کل صفحه لود شد، زبان پیش‌فرض انگلیسی بشه
+    window.onload = function () {
+      setLang("en");
       toggleRTL("en");
-    }
+    };
   </script>
 </body>
 </html>
