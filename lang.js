@@ -9,23 +9,42 @@ const content = {
     },
     about: {
       title: "About Me",
-      text: `I am a committed and hardworking individual with strong perseverance and discipline (I believe with a teaspoon, I can reach the Earth’s core). 
-I enjoy teamwork and have experience collaborating in financial market analysis. 
-I have good anger management skills and communicate effectively with team members. 
+      text: `I am a committed and hardworking individual with strong perseverance and discipline (I believe with a teaspoon, I can reach the Earth’s core).
+I enjoy teamwork and have experience collaborating in financial market analysis.
+I have good anger management skills and communicate effectively with team members.
 I am open to feedback and highly adaptable.`,
       cv: "Download CV",
     },
     skills: {
       title: "Skills",
       list: [
-        "Python","FastAPI","Telethon / Pyrogram","BeautifulSoup","Web Scraping",
-        "SQLAlchemy","Telegram Bot Development","MetaTrader 5 (MT5) Automation",
-        "Speech Recognition (Voice to Text)","Data Analysis","API Integration",
-        "Automation Scripting","Object-Oriented Programming (OOP)","Git / Version Control",
-        "JavaScript","HTML5","Django","PyQt / PySide","PostgreSQL","Linux Command Line",
-        "Constructive Feedback Acceptance","Emotional Control (Anger Management)",
-        "Work Ethic","Adaptability","Problem Solving","Team Collaboration"
-      ]
+        "Python",
+        "FastAPI",
+        "Telethon / Pyrogram",
+        "BeautifulSoup",
+        "Web Scraping",
+        "SQLAlchemy",
+        "Telegram Bot Development",
+        "MetaTrader 5 (MT5) Automation",
+        "Speech Recognition (Voice to Text)",
+        "Data Analysis",
+        "API Integration",
+        "Automation Scripting",
+        "Object-Oriented Programming (OOP)",
+        "Git / Version Control",
+        "JavaScript",
+        "HTML5",
+        "Django",
+        "PyQt / PySide",
+        "PostgreSQL",
+        "Linux Command Line",
+        "Constructive Feedback Acceptance",
+        "Emotional Control (Anger Management)",
+        "Work Ethic",
+        "Adaptability",
+        "Problem Solving",
+        "Team Collaboration",
+      ],
     },
     projects: {
       title: "Projects",
@@ -41,10 +60,10 @@ I am open to feedback and highly adaptable.`,
         "Scopa Cup – Tournament Assistant – PyQt6 tool for managing Scopa tournaments with team grouping, match scheduling, and score tracking.",
         "TeamTalk Audio Player Bot – Searches and plays YouTube audio in TeamTalk channels, supports favorites and TV/Radio streaming.",
         "Telegram Translation Bot – Multilingual bot using Pyrogram and Deep Translator with support for 133 languages.",
-        "Voice-to-Text Translator – Uses Deep Translator & SpeechRecognition to convert speech to translated text in real-time."
-      ]
+        "Voice-to-Text Translator – Uses Deep Translator & SpeechRecognition to convert speech to translated text in real-time.",
+      ],
     },
-    contact: { title: "Contact" }
+    contact: { title: "Contact" },
   },
 
   fa: {
@@ -57,22 +76,42 @@ I am open to feedback and highly adaptable.`,
     },
     about: {
       title: "درباره من",
-      text: `من فردی متعهد و سخت‌کوش هستم که پشتکار و انضباط بالایی دارم (باور دارم حتی با یک قاشق می‌توانم به هسته زمین برسم!).  
-به کار تیمی علاقه‌مندم و تجربه همکاری در تحلیل بازارهای مالی را دارم.  
-مهارت خوبی در مدیریت خشم دارم و ارتباط مؤثری با اعضای تیم برقرار می‌کنم.  
+      text: `من فردی متعهد و سخت‌کوش هستم که پشتکار و انضباط بالایی دارم (باور دارم حتی با یک قاشق می‌توانم به هسته زمین برسم!).
+به کار تیمی علاقه‌مندم و تجربه همکاری در تحلیل بازارهای مالی را دارم.
+مهارت خوبی در مدیریت خشم دارم و ارتباط مؤثری با اعضای تیم برقرار می‌کنم.
 پذیرای بازخورد هستم و به‌خوبی با تغییرات سازگار می‌شوم.`,
       cv: "دانلود رزومه",
     },
     skills: {
       title: "مهارت‌ها",
       list: [
-        "پایتون","FastAPI","Telethon / Pyrogram","BeautifulSoup","وب اسکرپینگ",
-        "SQLAlchemy","توسعه ربات تلگرام","اتومات‌سازی MetaTrader 5 (MT5)",
-        "تشخیص گفتار (Speech to Text)","تحلیل داده","یکپارچه‌سازی API",
-        "اسکریپت‌نویسی خودکار","برنامه‌نویسی شیء‌گرا (OOP)","Git / کنترل نسخه",
-        "جاوااسکریپت","HTML5","Django","PyQt / PySide","PostgreSQL","خط فرمان لینوکس",
-        "پذیرش بازخورد سازنده","کنترل خشم","اخلاق کاری","سازگاری","حل مسئله","کار تیمی"
-      ]
+        "پایتون",
+        "FastAPI",
+        "Telethon / Pyrogram",
+        "BeautifulSoup",
+        "وب اسکرپینگ",
+        "SQLAlchemy",
+        "توسعه ربات تلگرام",
+        "اتومات‌سازی MetaTrader 5 (MT5)",
+        "تشخیص گفتار (Speech to Text)",
+        "تحلیل داده",
+        "یکپارچه‌سازی API",
+        "اسکریپت‌نویسی خودکار",
+        "برنامه‌نویسی شیء‌گرا (OOP)",
+        "Git / کنترل نسخه",
+        "جاوااسکریپت",
+        "HTML5",
+        "Django",
+        "PyQt / PySide",
+        "PostgreSQL",
+        "خط فرمان لینوکس",
+        "پذیرش بازخورد سازنده",
+        "کنترل خشم",
+        "اخلاق کاری",
+        "سازگاری",
+        "حل مسئله",
+        "کار تیمی",
+      ],
     },
     projects: {
       title: "پروژه‌ها",
@@ -88,13 +127,14 @@ I am open to feedback and highly adaptable.`,
         "دستیار تورنمنت Scopa Cup – ابزار PyQt6 برای مدیریت تورنمنت Scopa شامل گروه‌بندی تیم‌ها، زمان‌بندی مسابقات و ثبت امتیازات.",
         "ربات پخش‌کننده صوت TeamTalk – جستجو و پخش صدای یوتیوب در کانال‌های TeamTalk با لیست علاقه‌مندی‌ها و استریم TV/Radio.",
         "ربات مترجم تلگرام – ربات چندزبانه با Pyrogram و Deep Translator با پشتیبانی از 133 زبان.",
-        "مترجم گفتار به متن – ابزاری با Deep Translator و SpeechRecognition برای ترجمه همزمان گفتار به متن."
-      ]
+        "مترجم گفتار به متن – ابزاری با Deep Translator و SpeechRecognition برای ترجمه همزمان گفتار به متن.",
+      ],
     },
-    contact: { title: "تماس" }
-  }
+    contact: { title: "تماس" },
+  },
 };
 
+// 📌 تغییر متن‌ها در صفحه
 function setLang(lang) {
   document.getElementById("nav-about").textContent = content[lang].nav.about;
   document.getElementById("nav-skills").textContent = content[lang].nav.skills;
@@ -109,7 +149,7 @@ function setLang(lang) {
   document.getElementById("skills-title").textContent = content[lang].skills.title;
   const skillsList = document.getElementById("skills-list");
   skillsList.innerHTML = "";
-  content[lang].skills.list.forEach(skill => {
+  content[lang].skills.list.forEach((skill) => {
     const li = document.createElement("li");
     li.textContent = skill;
     skillsList.appendChild(li);
@@ -118,55 +158,37 @@ function setLang(lang) {
   document.getElementById("proj-title").textContent = content[lang].projects.title;
   const projList = document.getElementById("proj-list");
   projList.innerHTML = "";
-  content[lang].projects.list.forEach(project => {
+  content[lang].projects.list.forEach((project) => {
     const li = document.createElement("li");
     li.textContent = project;
     projList.appendChild(li);
   });
 
   document.getElementById("contact-title").textContent = content[lang].contact.title;
-  document.getElementById("langBtn").textContent = lang === "en" ? "فارسی" : "English";
+
+  document.getElementById("langBtn").textContent =
+    lang === "en" ? "فارسی" : "English";
 }
 
-// ... همان content بزرگ که داری
-
-function setLang(lang) {
-  // ناوبری
-  document.getElementById("nav-about").textContent = content[lang].nav.about;
-  document.getElementById("nav-skills").textContent = content[lang].nav.skills;
-  document.getElementById("nav-exp").textContent = content[lang].nav.experience;
-  document.getElementById("nav-proj").textContent = content[lang].nav.projects;
-  document.getElementById("nav-contact").textContent = content[lang].nav.contact;
-
-  // درباره من
-  document.getElementById("about-title").textContent = content[lang].about.title;
-  document.getElementById("about-text").textContent = content[lang].about.text;
-  document.getElementById("cv-btn").textContent = content[lang].about.cv;
-
-  // مهارت‌ها
-  document.getElementById("skills-title").textContent = content[lang].skills.title;
-  const skillsList = document.getElementById("skills-list");
-  skillsList.innerHTML = "";
-  content[lang].skills.list.forEach(skill => {
-    const li = document.createElement("li");
-    li.textContent = skill;
-    skillsList.appendChild(li);
-  });
-
-  // پروژه‌ها
-  document.getElementById("proj-title").textContent = content[lang].projects.title;
-  const projList = document.getElementById("proj-list");
-  projList.innerHTML = "";
-  content[lang].projects.list.forEach(project => {
-    const li = document.createElement("li");
-    li.textContent = project;
-    projList.appendChild(li);
-  });
-
-  // تماس
-  document.getElementById("contact-title").textContent = content[lang].contact.title;
-
-  // تغییر جهت متن
+// 📌 تغییر جهت متن‌ها
+function toggleRTL(lang) {
   document.body.style.direction = lang === "fa" ? "rtl" : "ltr";
   document.body.style.textAlign = lang === "fa" ? "right" : "left";
 }
+
+// 📌 بازنویسی setLang برای پشتیبانی از RTL
+const originalSetLang = setLang;
+setLang = (lang) => {
+  originalSetLang(lang);
+  toggleRTL(lang);
+};
+
+// 📌 دکمه تغییر زبان
+function toggleLang() {
+  const currentLang =
+    document.getElementById("langBtn").textContent === "فارسی" ? "en" : "fa";
+  setLang(currentLang);
+}
+
+// 📌 اجرای اولیه
+setLang("en");
