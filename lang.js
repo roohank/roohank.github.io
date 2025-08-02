@@ -42,7 +42,7 @@ I am open to feedback and highly adaptable.`,
 ,
       cv: "دانلود رزومه",
     },
-    skills: { title: "مهارت‌ها", list: ["پایتون", "FastAPI", "Telethon / Pyrogram", "BeautifulSoup", "وب اسکرپینگ", "SQLAlchemy", "توسعه ربات تلگرام", "اتومات‌سازی MetaTrader 5 (MT5)", "تشخیص گفتار (Speech to Text)", "تحلیل داده", "یکپارچه‌سازی API", "اسکریپت‌نویسی خودکار", "برنامه‌نویسی شیء‌گرا (OOP)", "Git / کنترل نسخه", "جاوااسکریپت", "HTML5", "Django", "PyQt / PySide", "PostgreSQL", "خط فرمان لینوکس", "پذیرش بازخورد سازنده", "کنترل خشم", "اخلاق کاری", "سازگاری", "حل مسئله", "کار تیمی"] },
+    skills: { title: "مهارت‌ها", list: ["پایتون", "FastAPI", "Telethon / Pyrogram", "BeautifulSoup", "وب اسکرپینگ", "SQLAlchemy", "توسعه ربات تلگرام", "اتومات‌سازی MetaTrader 5 (MT5)", "تشخیص گفتار (Speech to Text)", "تحلیل داده", "یکپارچه‌سازی API", "اسکریپت‌نویسی خودکار", "برنامه‌نویسی شیء‌گرا (OOP)", "Git / کنترل نسخه", "جاوااسکریپت", "HTML5", "Django", "PyQt / PySide", "PostgreSQL"] },
     experience: { expTitle: "تجربه‌ها", expText: `<p><strong>۲۰۲۳ تا اکنون:</strong> ساخت ابزارهای اتوماسیون تلگرام و سیستم‌های بک‌تست استراتژی‌های معاملاتی.</p><p><strong>۲۰۲۲ تا ۲۰۲۳:</strong> توسعه ربات‌های انتشار محتوای وردپرس-تلگرام و یکپارچه‌سازی API.</p>` },
     projects: {
       title: "پروژه‌ها",
