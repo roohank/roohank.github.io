@@ -8,6 +8,7 @@ I am a committed and hardworking individual with strong perseverance and discipl
 I have good anger management skills and communicate effectively with team members.
 I am open to feedback and highly adaptable.`,
       cv: "Download CV",
+      cvOnline: "Online Resume",
     },
     skills: { title: "Skills", list: ["Python", "FastAPI", "Telethon / Pyrogram", "BeautifulSoup", "Web Scraping", "SQLAlchemy", "Telegram Bot Development", "MetaTrader 5 (MT5) Automation", "Speech Recognition (Voice to Text)", "Data Analysis", "API Integration", "Automation Scripting", "Object-Oriented Programming (OOP)", "Git / Version Control", "JavaScript", "HTML5", "Django", "PyQt / PySide", "PostgreSQL"] },
     experience: { expTitle: "Experience", expText: `<p><strong>2023 - Present:</strong> Building Telegram automation tools and trading strategy backtesting systems.</p><p><strong>2022 - 2023:</strong> Developed WordPress-Telegram content publishing bots and API integrations.</p>` },
@@ -41,6 +42,7 @@ I am open to feedback and highly adaptable.`,
 پذیرای بازخورد هستم و به‌خوبی با تغییرات سازگار می‌شوم.`
 ,
       cv: "دانلود رزومه",
+      cvOnline: "نسخه آنلاین رزومه",
     },
     skills: { title: "مهارت‌ها", list: ["پایتون", "FastAPI", "Telethon / Pyrogram", "BeautifulSoup", "وب اسکرپینگ", "SQLAlchemy", "توسعه ربات تلگرام", "اتومات‌سازی MetaTrader 5 (MT5)", "تشخیص گفتار (Speech to Text)", "تحلیل داده", "یکپارچه‌سازی API", "اسکریپت‌نویسی خودکار", "برنامه‌نویسی شیء‌گرا (OOP)", "Git / کنترل نسخه", "جاوااسکریپت", "HTML5", "Django", "PyQt / PySide", "PostgreSQL"] },
     experience: { expTitle: "تجربه‌ها", expText: `<p><strong>۲۰۲۳ تا اکنون:</strong> ساخت ابزارهای اتوماسیون تلگرام و سیستم‌های بک‌تست استراتژی‌های معاملاتی.</p><p><strong>۲۰۲۲ تا ۲۰۲۳:</strong> توسعه ربات‌های انتشار محتوای وردپرس-تلگرام و یکپارچه‌سازی API.</p>` },
@@ -90,6 +92,8 @@ function updateContent(lang) {
 
   document.getElementById("exp-title").textContent = t.experience.expTitle;
   document.getElementById("exp-text").innerHTML = t.experience.expText;
+
+  document.getElementById("cv-online").textContent = t.about.cvOnline;
 
   document.getElementById("proj-title").textContent = t.projects.title;
   const projList = document.getElementById("proj-list");
