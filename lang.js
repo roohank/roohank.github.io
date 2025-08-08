@@ -4,7 +4,6 @@ const content = {
     about: {
       title: "About Me",
       text: `Hello! I'm Roohan Kamalian, a Python developer passionate about building Telegram bots, automation tools, and web applications.
-I am a committed and hardworking individual with strong perseverance and discipline (I believe with a teaspoon, I can reach the Earth’s core).
 I have good anger management skills and communicate effectively with team members.
 I am open to feedback and highly adaptable.`,
       cv: "Download CV",
@@ -37,8 +36,6 @@ I am open to feedback and highly adaptable.`,
     about: {
       title: "درباره من",
       text: `سلام! من روحان کمالیان هستم، توسعه‌دهنده پایتون علاقه‌مند به ساخت ربات‌های تلگرام، ابزارهای اتوماسیون و اپلیکیشن‌های وب.
-من فردی متعهد و سخت‌کوش هستم که پشتکار و انضباط بالایی دارم (باور دارم حتی با یک قاشق می‌توانم به هسته زمین برسم!).
-به کار تیمی علاقه‌مندم و تجربه همکاری در تحلیل بازارهای مالی را دارم.
 پذیرای بازخورد هستم و به‌خوبی با تغییرات سازگار می‌شوم.`
 ,
       cv: "دانلود رزومه",
